@@ -7,6 +7,7 @@ add_weekday AS (
         date_part('day', date) AS weekday,
         date_part('dow', date) AS day_num,
         date_part('month', day) as month
+        date_part('month', day) as year
     FROM temp_daily
 )
 SELECT *
