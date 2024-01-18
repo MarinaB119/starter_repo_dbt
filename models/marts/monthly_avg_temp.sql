@@ -8,4 +8,3 @@ WITH total_avg_month AS (
     group by city, country,  month, lat, lon
 )
 SELECT * from total_avg_month
-;
