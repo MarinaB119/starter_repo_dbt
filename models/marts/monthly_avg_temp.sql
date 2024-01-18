@@ -7,4 +7,4 @@ WITH total_avg AS (
     from {{ref("prep_temp")}}
     group by city, country,  month, lat, lon
     )
-SELECT * from total_avg;
+SELECT * from total_avg
