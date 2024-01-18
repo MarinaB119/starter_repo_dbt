@@ -6,5 +6,6 @@ WITH total_avg_month AS (
     min(mintemp_c) as min_temp_month
     from {{ref("prep_temp")}}
     group by city, country,  month, lat, lon
-    order by city, month)
+)
 SELECT * from total_avg_month
+order by city, month;
